@@ -19,23 +19,42 @@ public class TranslationService {
     private String buildPrompt(String text, int level) {
 
         return """
-                Translate the following English sentence into French.
+            You are a professional English-to-French translator.
 
-                Formality Levels:
-                1 = Very informal
-                2 = Informal
-                3 = Neutral
-                4 = Formal
-                5 = Very formal
+            Translate the sentence into French.
 
-                English:
-                %s
+            Formality levels:
 
-                Formality Level:
-                %d
+            Level 1:
+            Very informal French used with close friends.
 
-                Output only the translation.
-                """
+            Level 2:
+            Informal everyday conversation.
+
+            Level 3:
+            Neutral standard French.
+
+            Level 4:
+            Formal professional French.
+
+            Level 5:
+            Very formal French suitable for official correspondence.
+
+            English:
+            %s
+
+            Formality Level:
+            %d
+
+            Return ONLY the French translation.
+
+            Do NOT:
+            - explain
+            - justify
+            - add labels
+            - mention the formality level
+            - add comments
+            """
                 .formatted(text, level);
     }
 }
