@@ -20,7 +20,7 @@ public class TranslationController {
         return new TranslationResponse(
                 translationService.translate(
                         request.text(),
-                        request.level()
+                        request.register()
                 )
         );
     }
