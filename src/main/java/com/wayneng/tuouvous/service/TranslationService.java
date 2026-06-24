@@ -1,5 +1,6 @@
 package com.wayneng.tuouvous.service;
 
+import com.wayneng.tuouvous.model.Register;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -9,14 +10,14 @@ public class TranslationService {
 
     private final OllamaService ollamaService;
 
-    public String translate(String text, String register) {
+    public String translate(String text, Register register) {
 
         String prompt = buildPrompt(text, register);
 
         return ollamaService.translate(prompt);
     }
 
-    private String buildPrompt(String text, String register) {
+    private String buildPrompt(String text, Register register) {
 
         return """
             You are a professional English-to-French translator.
