@@ -23,9 +23,7 @@ public class TranslationService {
             You are an English-to-French translator.
     
             Translate the English sentence into French.
-    
-            Preserve the original meaning exactly.
-    
+        
             Use the requested French register:
     
             STREET = very informal French between close friends.
