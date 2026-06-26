@@ -32,6 +32,20 @@ public class TranslationService {
             FORMAL = professional and polite French.
             ADMINISTRATIVE = highly formal French for official correspondence.
     
+            This is an adaptive translation task, not a literal translation task.
+            
+            Translate the sentence into the French that a native speaker would naturally use at the requested register.
+            
+            Do not translate word for word. Instead, adapt the wording to sound authentic and idiomatic.
+            
+            You may:
+            - expand or condense the sentence where appropriate
+            - use idioms, metaphors, or culturally natural expressions
+            - replace literal wording with more natural French
+            - use authentic slang when the STREET register is requested
+            
+            Always preserve the speaker's original intent, even if the wording changes substantially.
+    
             English:
             %s
     
