@@ -14,7 +14,7 @@ public class OllamaService {
 
         OllamaGenerateRequest request =
                 new OllamaGenerateRequest(
-                        "mistral:7b",
+                        "qwen3:8b",
                         prompt,
                         false
                 );
